@@ -1,0 +1,34 @@
+.search-results{
+    height: 39rem;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    align-items: center;
+}
+
+.data-card{
+    padding: 5px;
+    margin: 8px 0px;
+    width: 40%;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(55, 155, 236);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: .1rem .2rem;
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #fff;
+    color: black;
+}
+
+

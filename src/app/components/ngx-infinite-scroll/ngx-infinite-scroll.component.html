@@ -1,0 +1,22 @@
+<div class="search-results" 
+infiniteScroll
+[infiniteScrollDistance]="2"
+[infiniteScrollThrottle]="500"
+(scrolled)="onScroll()"
+[scrollWindow]="false">
+    <div class="data-card" *ngFor="let item of items">
+        {{item}}
+        <h4>ID:example</h4>
+        <h5>Name:example</h5>
+        <h5>Surname:example</h5>
+        <p>BIO: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Harum perferendis nostrum aut aliquid delectus perspiciatis 
+        </p>
+        <a routerLink="friends">Friends List</a>
+    </div>
+    <div *ngIf="isLoading">
+        Loading...
+    </div>
+
+</div>
+<router-outlet></router-outlet>
